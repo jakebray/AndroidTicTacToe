@@ -59,6 +59,9 @@ public class NetworkThread extends Thread {
 				sendEndMessage(">> TIE GAME <<");
 			}
 			
+			// send QUIT request to the server, to free up some memory
+			sendAndReceive("QUIT " + myID + " " + myGroup);
+			
 			
 		} catch (SocketException e) {
 			Log.i("NetworkThread", e.toString());
