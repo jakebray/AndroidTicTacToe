@@ -1,7 +1,9 @@
 AndroidTicTacToe
+================
 Android Networked Tic-Tac-Toe Game for 2 players
 
 Protocol Design
+---------------
 When each client connects, they send a FIND request to the server, which either:
   (a) places the client in an empty group and has it wait until it is joined by  another, or
   (b) places the client in a group that already has one client waiting in it.
