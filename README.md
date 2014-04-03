@@ -2,6 +2,9 @@ AndroidTicTacToe
 ================
 Android Networked Tic-Tac-Toe Game for 2 players
 
+Uses the UDP server found in this repository:
+https://github.com/jakebray/Assignment3/tree/master/src/udpgroupchat/server
+
 Protocol Design
 ---------------
 When each client connects, they send a FIND request to the server, which either:
